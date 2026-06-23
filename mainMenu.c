@@ -44,6 +44,7 @@ void mainMenu() {
             default:
                 break;
         }
+        
         printf("\n"); system("pause");
         system("cls");
     } while (choice != 5);
