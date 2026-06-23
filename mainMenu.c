@@ -51,6 +51,7 @@ void mainMenu() {
         system("cls");
     } while (choice != 5);
 }
+
 void addNum() {
 
     int num1 = 0, num2 = 0;
