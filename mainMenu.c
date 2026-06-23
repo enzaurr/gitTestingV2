@@ -2,6 +2,7 @@
 #include <windows.h>
 
 void mainMenu();
+void addNum();
 
 int main() {
 
@@ -24,10 +25,11 @@ void mainMenu() {
         printf("D:  ");
         scanf("%d", &choice);
 
-        system("pause"); system("cls");
+        system("cls");
         switch (choice) {
             case 1:
                 printf("1   : Add Numbers\n");
+                addNum();
                 break;
             case 2:
                 printf("2   : Subtract Numbers\n");
@@ -44,7 +46,23 @@ void mainMenu() {
             default:
                 break;
         }
+        
         printf("\n"); system("pause");
         system("cls");
     } while (choice != 5);
+}
+
+void addNum() {
+
+    int num1 = 0, num2 = 0;
+
+    printf("Enter First Number: ");
+    scanf("%d", &num1);
+
+    printf("Enter Second Number: ");
+    scanf("%d", &num2);
+
+    printf("\n%d + %d = %d\n", num1, num2, num1 + num2);
+
+    return;
 }
