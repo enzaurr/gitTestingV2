@@ -27,7 +27,7 @@ void mainMenu() {
         switch (choice) {
             case 1:
                 printf("1   : Add Numbers\n");
-                add();
+                addNum();
                 break;
             case 2:
                 printf("2   : Subtract Numbers\n");
