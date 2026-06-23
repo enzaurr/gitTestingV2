@@ -24,6 +24,7 @@ void mainMenu() {
         printf("D:  ");
         scanf("%d", &choice);
 
+        system("pause"); system("cls");
         switch (choice) {
             case 1:
                 printf("1   : Add Numbers\n");
@@ -42,10 +43,8 @@ void mainMenu() {
                 break;
             default:
                 break;
-
-            printf("\n"); system("pause");
-            system("cls");
         }
-
+        printf("\n"); system("pause");
+        system("cls");
     } while (choice != 5);
 }
