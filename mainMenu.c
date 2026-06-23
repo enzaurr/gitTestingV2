@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void mainMenu();
+void addNum();
 
 int main() {
 
@@ -26,6 +27,7 @@ void mainMenu() {
         switch (choice) {
             case 1:
                 printf("1   : Add Numbers\n");
+                add();
                 break;
             case 2:
                 printf("2   : Subtract Numbers\n");
@@ -44,4 +46,19 @@ void mainMenu() {
         }
 
     } while (choice != 5);
+}
+
+void addNum() {
+
+    int num1 = 0, num2 = 0;
+
+    printf("Enter First Number: ");
+    scanf("%d", &num1);
+
+    printf("Enter Second Number: ");
+    scanf("%d", &num2);
+
+    printf("\n%d + %d = %d\n", num1, num2, num1 + num2);
+
+    return;
 }
