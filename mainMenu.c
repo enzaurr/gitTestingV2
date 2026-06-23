@@ -25,7 +25,7 @@ void mainMenu() {
         printf("D:  ");
         scanf("%d", &choice);
 
-        system("pause"); system("cls");
+        system("cls");
         switch (choice) {
             case 1:
                 printf("1   : Add Numbers\n");
